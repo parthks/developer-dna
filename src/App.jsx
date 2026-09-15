@@ -13,6 +13,39 @@ const LANGUAGE_COLORS = Object.fromEntries(
   dna.languageGenome.languages.map((l) => [l.name, l.color])
 );
 
+// ─── Readable text colors ───────────────────────────────────────────
+// Data colors (languages, categories) are tuned for dots and bars. As text on a
+// dark tinted chip some fall below WCAG AA, so lighten toward white until they pass.
+function luminance(hex) {
+  const [r, g, b] = hex.slice(1, 7).match(/../g).map((x) => {
+    const v = parseInt(x, 16) / 255;
+    return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+
+function mix(hex, target, t) {
+  const a = hex.slice(1, 7).match(/../g).map((x) => parseInt(x, 16));
+  const b = target.slice(1, 7).match(/../g).map((x) => parseInt(x, 16));
+  return "#" + a.map((v, i) => Math.round(v + (b[i] - v) * t).toString(16).padStart(2, "0")).join("");
+}
+
+const readableCache = new Map();
+function readableText(hex, minContrast = 4.5) {
+  if (!hex) return hex;
+  const key = hex + minContrast;
+  if (readableCache.has(key)) return readableCache.get(key);
+  // Worst case: the color's own ~12% tint over the lightest surface (#111c30).
+  const bg = luminance(mix("#111c30", hex, 0x20 / 255));
+  let out = hex;
+  for (let t = 0; t <= 1; t += 0.05) {
+    out = mix(hex, "#ffffff", t);
+    if ((luminance(out) + 0.05) / (bg + 0.05) >= minContrast) break;
+  }
+  readableCache.set(key, out);
+  return out;
+}
+
 // Timeline: pick a color gradient from emerald→sky→violet based on position
 const TIMELINE_COLORS = ["#34d399", "#34d399", "#60a5fa", "#818cf8", "#3b82f6", "#a78bfa", "#8b5cf6", "#6366f1", "#3b82f6"];
 
@@ -64,7 +97,7 @@ function SectionHeader({ number, label, labelColor, title, desc }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
     >
-      <span className="font-mono text-[11px] font-medium tracking-[0.15em]" style={{ color: labelColor }}>
+      <span className="font-mono text-[11px] font-medium tracking-[0.15em]" style={{ color: readableText(labelColor) }}>
         {number} — {label}
       </span>
       <h2 className="font-mono text-2xl sm:text-[32px] font-bold text-text-primary mt-2 tracking-tight">{title}</h2>
@@ -159,7 +192,7 @@ function TreemapChart() {
             </span>
             <span
               className={`font-mono font-bold tracking-tight ${isMedium ? "text-base sm:text-xl" : isLarge ? "text-xl sm:text-4xl mt-0.5 sm:mt-1" : "text-sm sm:text-base"}`}
-              style={{ color: rect.color }}
+              style={{ color: readableText(rect.color) }}
             >
               {rect.percentage}%
             </span>
@@ -367,6 +400,8 @@ export default function App() {
           <SectionHeader number="02" label="EVOLUTION TIMELINE" labelColor="#3b82f6" title="How my stack grew" desc="The journey from first commit to full-stack polyglot, year by year." />
 
           <div className="relative overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+            {/* Sized to the full row of years so the line runs the whole scroll width. */}
+            <div className="relative" style={{ width: `max(100%, ${TIMELINE.length * 140 + (TIMELINE.length - 1) * 16}px)` }}>
             <div className="absolute top-[10px] left-0 right-0 h-[2px] bg-gradient-to-r from-emerald to-sky" />
 
             <div className={`relative grid gap-4`} style={{ gridTemplateColumns: `repeat(${TIMELINE.length}, minmax(140px, 1fr))` }}>
@@ -387,7 +422,7 @@ export default function App() {
                     <span className="font-mono text-xl font-bold text-text-primary">{item.year}</span>
                   </div>
 
-                  <p className="font-body text-xs font-light text-text-muted leading-relaxed whitespace-pre-line mb-4">
+                  <p className="font-body text-xs text-text-secondary leading-relaxed whitespace-pre-line mb-4">
                     {item.annotation}
                   </p>
 
@@ -397,7 +432,7 @@ export default function App() {
                         key={tag.label}
                         className="font-mono text-[10px] font-medium px-2.5 py-1 rounded-md whitespace-nowrap"
                         style={{
-                          color: tag.color,
+                          color: readableText(tag.color),
                           backgroundColor: `${tag.color}15`,
                           border: tag.border ? `1px solid ${tag.color}30` : "none",
                         }}
@@ -408,6 +443,7 @@ export default function App() {
                   </div>
                 </motion.div>
               ))}
+            </div>
             </div>
           </div>
         </div>
@@ -451,7 +487,7 @@ export default function App() {
               <span className="font-mono text-[10px] font-medium text-text-muted tracking-wider">TOP FRAMEWORKS</span>
               <div className="flex flex-wrap gap-2">
                 {codeSignature.topFrameworks.slice(0, 3).map((fw) => (
-                  <span key={fw.name} className="font-mono text-[11px] font-medium px-3 py-1.5 rounded-md" style={{ color: fw.color, backgroundColor: `${fw.color}15` }}>
+                  <span key={fw.name} className="font-mono text-[11px] font-medium px-3 py-1.5 rounded-md" style={{ color: readableText(fw.color), backgroundColor: `${fw.color}15` }}>
                     {fw.name}
                   </span>
                 ))}
@@ -492,7 +528,7 @@ export default function App() {
               >
                 <span
                   className="font-mono text-[10px] font-semibold px-2.5 py-1 rounded-md self-start"
-                  style={{ color: hl.badgeColor, backgroundColor: `${hl.badgeColor}15` }}
+                  style={{ color: readableText(hl.badgeColor), backgroundColor: `${hl.badgeColor}15` }}
                 >
                   {hl.badge}
                 </span>
@@ -503,7 +539,7 @@ export default function App() {
                   {hl.description || "—"}
                 </p>
                 <div className="flex items-center gap-4 mt-auto">
-                  <span className="font-mono text-[11px]" style={{ color: LANGUAGE_COLORS[hl.language] || "#8b8b8b" }}>{hl.language}</span>
+                  <span className="font-mono text-[11px]" style={{ color: readableText(LANGUAGE_COLORS[hl.language] || "#8b8b8b") }}>{hl.language}</span>
                   <span className="font-mono text-[11px] text-text-muted">{formatLines(hl.estimatedLines)} lines</span>
                   {hl.type && <span className="font-mono text-[11px] text-text-muted">{hl.type}</span>}
                 </div>
@@ -566,7 +602,7 @@ export default function App() {
                   <span className="font-mono text-[13px] font-medium text-text-primary group-hover:text-emerald transition-colors">{repo.name}</span>
                   {repo.description && <p className="font-body text-[11px] text-text-muted mt-0.5 leading-relaxed">{repo.description}</p>}
                 </div>
-                <span className="font-body text-[13px] flex-1" style={{ color: repo.languageColor }}>{repo.language}</span>
+                <span className="font-body text-[13px] flex-1" style={{ color: readableText(repo.languageColor) }}>{repo.language}</span>
                 <span className="font-body text-[13px] text-text-muted flex-1">{repo.type}</span>
                 <span className={`font-mono text-[11px] font-medium w-20 ${repo.isPrivate ? "text-amber" : "text-emerald"}`}>{repo.isPrivate ? "Private" : "Public"}</span>
                 <span className="font-mono text-[13px] text-text-muted w-24">{new Date(repo.createdAt).toLocaleDateString("en-US", { month: "short", year: "numeric" })}</span>
