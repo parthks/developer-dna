@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-03-18T17:56:11.418Z",
+  "generatedAt": "2026-09-15T16:08:44.700Z",
   "username": "parthks",
   "metrics": {
-    "totalRepos": 69,
-    "totalLinesOfCode": 700369,
-    "totalStars": 4,
+    "totalRepos": 81,
+    "totalLinesOfCode": 1364898,
+    "totalStars": 5,
     "languageCount": 13,
     "firstCommitYear": 2016
   },
   "languageGenome": {
-    "totalBytes": 35018456,
-    "totalEstimatedLines": 700369,
+    "totalBytes": 68244879,
+    "totalEstimatedLines": 1364898,
     "languages": [
       {
         "name": "TypeScript",
-        "bytes": 13577630,
-        "estimatedLines": 271553,
-        "repoCount": 34,
-        "percentage": 39,
+        "bytes": 41559210,
+        "estimatedLines": 831184,
+        "repoCount": 43,
+        "percentage": 61,
         "color": "#3b82f6"
       },
       {
         "name": "JavaScript",
-        "bytes": 10765607,
-        "estimatedLines": 215312,
-        "repoCount": 49,
-        "percentage": 31,
+        "bytes": 12030348,
+        "estimatedLines": 240607,
+        "repoCount": 63,
+        "percentage": 18,
         "color": "#f7df1e"
       },
       {
@@ -33,7 +33,7 @@
         "bytes": 4245529,
         "estimatedLines": 84911,
         "repoCount": 3,
-        "percentage": 12,
+        "percentage": 6,
         "color": "#f97316"
       },
       {
@@ -41,46 +41,46 @@
         "bytes": 3242616,
         "estimatedLines": 64852,
         "repoCount": 5,
-        "percentage": 9,
+        "percentage": 5,
         "color": "#7c3aed"
       },
       {
         "name": "Python",
-        "bytes": 1229493,
-        "estimatedLines": 24590,
-        "repoCount": 17,
+        "bytes": 2793754,
+        "estimatedLines": 55875,
+        "repoCount": 21,
         "percentage": 4,
         "color": "#38bdf8"
+      },
+      {
+        "name": "HTML",
+        "bytes": 1769044,
+        "estimatedLines": 35381,
+        "repoCount": 46,
+        "percentage": 3,
+        "color": "#e34c26"
+      },
+      {
+        "name": "CSS",
+        "bytes": 1032158,
+        "estimatedLines": 20643,
+        "repoCount": 55,
+        "percentage": 2,
+        "color": "#a855f7"
       },
       {
         "name": "Swift",
         "bytes": 915551,
         "estimatedLines": 18311,
         "repoCount": 3,
-        "percentage": 3,
+        "percentage": 1,
         "color": "#F05138"
       },
       {
-        "name": "CSS",
-        "bytes": 534876,
-        "estimatedLines": 10698,
-        "repoCount": 43,
-        "percentage": 2,
-        "color": "#a855f7"
-      },
-      {
-        "name": "HTML",
-        "bytes": 249075,
-        "estimatedLines": 4982,
-        "repoCount": 38,
-        "percentage": 1,
-        "color": "#e34c26"
-      },
-      {
         "name": "Other",
-        "bytes": 258079,
-        "estimatedLines": 5162,
-        "repoCount": 14,
+        "bytes": 656669,
+        "estimatedLines": 13133,
+        "repoCount": 21,
         "percentage": 1,
         "color": "#8b8b8b"
       }
@@ -183,55 +183,23 @@
       {
         "year": 2026,
         "newLanguages": [],
-        "repoCount": 6,
-        "annotation": "6 new repos.",
+        "repoCount": 18,
+        "annotation": "18 new repos.",
         "totalLanguagesKnown": 13,
-        "topRepo": "caxus"
+        "topRepo": "bandrahomes-parser"
       }
     ]
   },
   "builderProfile": {
     "categories": [
       {
-        "name": "Web App",
-        "icon": "globe",
-        "count": 24,
-        "percentage": 35,
-        "color": "#3B82F6",
-        "repos": [
-          "EduSim",
-          "MealShare",
-          "wedemat-old-site",
-          "Corona",
-          "nextjs",
-          "nextjs-netlify-blog-template",
-          "sanity-nextjs-landing-pages",
-          "virtuoso",
-          "the-only-indian-store",
-          "vrlila",
-          "overbooked",
-          "wedemat-next",
-          "spotters",
-          "threejs-demo",
-          "cf-vite-react-template",
-          "react-router-starter-template",
-          "gp-memorial-tribute",
-          "ys-ai-test",
-          "shadibaba",
-          "ArrowsAndAstras",
-          "orderflow-360",
-          "YS-OPS",
-          "wedemat-kings",
-          "Truvy"
-        ]
-      },
-      {
         "name": "Blockchain / Web3",
         "icon": "link",
-        "count": 23,
-        "percentage": 33,
+        "count": 26,
+        "percentage": 32,
         "color": "#8B5CF6",
         "repos": [
+          "fun",
           "Trading-Bot",
           "Yelloskye-DEX",
           "Yelloskye-QID-old",
@@ -243,6 +211,7 @@
           "solana-mint-token",
           "Yelloskye-D3D",
           "SolanaQuests",
+          "ichtech",
           "vov",
           "SA-escape-velocity",
           "ruc_nft",
@@ -251,6 +220,7 @@
           "arweave-scraper",
           "ao-library",
           "ao-bazarworld",
+          "dumverse",
           "Trends",
           "Trends-frontend",
           "hyparweave",
@@ -258,53 +228,124 @@
         ]
       },
       {
+        "name": "Web App",
+        "icon": "globe",
+        "count": 23,
+        "percentage": 28,
+        "color": "#3B82F6",
+        "repos": [
+          "EduSim",
+          "wedemat-old-site",
+          "Corona",
+          "nextjs",
+          "nextjs-netlify-blog-template",
+          "sanity-nextjs-landing-pages",
+          "admin",
+          "the-only-indian-store",
+          "vrlila",
+          "overbooked",
+          "wedemat-next",
+          "spotters",
+          "threejs-demo",
+          "cf-vite-react-template",
+          "react-router-starter-template",
+          "gp-memorial-tribute",
+          "shadibaba",
+          "orderflow-360",
+          "YS-OPS",
+          "wedemat-kings",
+          "Truvy",
+          "developer-dna",
+          "cliproom"
+        ]
+      },
+      {
         "name": "Scripts & Experiments",
         "icon": "flask",
-        "count": 10,
-        "percentage": 14,
+        "count": 8,
+        "percentage": 10,
         "color": "#9CA3AF",
         "repos": [
           "parthks.github.io",
+          "virtual-event-starter-kit",
+          "theonlyindianstore",
+          "meetme",
+          "stock-kings",
+          "my_personal_notes",
+          "bandrahomes-parser",
+          "conductor-playground"
+        ]
+      },
+      {
+        "name": "Game",
+        "icon": "gamepad-2",
+        "count": 5,
+        "percentage": 6,
+        "color": "#EC4899",
+        "repos": [
+          "PokeGoChat",
           "EduSim-1.0",
-          "undergroundz",
+          "Drawn",
+          "bustabit",
+          "ArrowsAndAstras"
+        ]
+      },
+      {
+        "name": "Mobile App",
+        "icon": "smartphone",
+        "count": 5,
+        "percentage": 6,
+        "color": "#F97316",
+        "repos": [
+          "Mvents",
+          "MealShare",
           "wedemat-react",
           "tindearyo",
-          "admin",
-          "virtual-event-starter-kit",
-          "bustabit",
-          "theonlyindianstore",
-          "meetme"
+          "impromptoo"
         ]
       },
       {
         "name": "Scraper / Automation",
         "icon": "bot",
         "count": 4,
-        "percentage": 6,
+        "percentage": 5,
         "color": "#06B6D4",
         "repos": [
           "download-all",
-          "fun",
+          "undergroundz",
           "whatsapp-agent",
           "caxus"
         ]
       },
       {
-        "name": "Mobile App",
-        "icon": "smartphone",
-        "count": 2,
-        "percentage": 3,
-        "color": "#F97316",
+        "name": "API / Backend",
+        "icon": "server",
+        "count": 3,
+        "percentage": 4,
+        "color": "#F59E0B",
         "repos": [
-          "PokeGoChat",
-          "Mvents"
+          "virtuoso",
+          "vimeo-thumbnail-server",
+          "whatsapp-recruiter"
+        ]
+      },
+      {
+        "name": "Data / ML",
+        "icon": "brain",
+        "count": 3,
+        "percentage": 4,
+        "color": "#14B8A6",
+        "repos": [
+          "ys-ai-test",
+          "antigravity",
+          "dj-school"
         ]
       },
       {
         "name": "Config / Dotfiles",
         "icon": "settings",
         "count": 2,
-        "percentage": 3,
+        "percentage": 2,
         "color": "#6B7280",
         "repos": [
           "dotfiles",
@@ -312,61 +353,41 @@
         ]
       },
       {
-        "name": "Game",
-        "icon": "gamepad-2",
+        "name": "Library / SDK",
+        "icon": "package",
         "count": 2,
-        "percentage": 3,
-        "color": "#EC4899",
+        "percentage": 2,
+        "color": "#A78BFA",
         "repos": [
-          "Drawn",
-          "dumverse"
-        ]
-      },
-      {
-        "name": "Data / ML",
-        "icon": "brain",
-        "count": 1,
-        "percentage": 1,
-        "color": "#14B8A6",
-        "repos": [
-          "ichtech"
-        ]
-      },
-      {
-        "name": "API / Backend",
-        "icon": "server",
-        "count": 1,
-        "percentage": 1,
-        "color": "#F59E0B",
-        "repos": [
-          "vimeo-thumbnail-server"
+          "mes-project",
+          "posibill"
         ]
       }
     ]
   },
   "codeSignature": {
-    "avgRepoSize": 10150,
-    "totalCommits": 1223,
-    "avgCommitsPerRepo": 24,
-    "avgLinesPerCommit": 2305,
+    "avgRepoSize": 16851,
+    "totalCommits": 2861,
+    "avgCommitsPerRepo": 47,
+    "avgLinesPerCommit": 2410,
     "mostActiveYear": {
       "year": 2026,
-      "commits": 348
+      "commits": 1986
     },
     "topFrameworks": [
       {
         "name": "React",
-        "repoCount": 30,
+        "repoCount": 34,
         "color": "#61DAFB"
       },
       {
         "name": "Vite",
-        "repoCount": 12,
+        "repoCount": 16,
         "color": "#646CFF"
       },
       {
         "name": "Tailwind CSS",
-        "repoCount": 10,
+        "repoCount": 13,
         "color": "#06B6D4"
       },
       {
@@ -401,27 +422,195 @@
     {
       "badge": "Biggest Web App",
       "badgeColor": "#3B82F6",
-      "name": "EduSim",
-      "description": "An immersive personalized education platform for Linear Algebra ",
-      "stars": 1,
+      "name": "wedemat-kings",
+      "description": "The V2 aka the final rewrite of wedemat. AI kingly power. ",
+      "stars": 0,
       "forks": 0,
-      "language": "JavaScript",
-      "estimatedLines": 32533,
+      "language": "TypeScript",
+      "estimatedLines": 307537,
       "type": "Web App"
     },
     {
       "badge": "Game Dev",
       "badgeColor": "#EC4899",
-      "name": "dumverse",
-      "description": "2D browser RPG game on the AO/Arweave ecosystem with towns, combat, shops, and exploration.",
-      "stars": 2,
-      "forks": 3,
-      "language": "TypeScript",
-      "estimatedLines": 14026,
+      "name": "EduSim-1.0",
+      "description": "Educational simulation game built with Phaser.js for practicing linear algebra through story-driven quests.",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "estimatedLines": 65548,
       "type": "Game"
     }
   ],
   "allRepos": [
+    {
+      "name": "cliproom",
+      "language": "TypeScript",
+      "languageColor": "#3b82f6",
+      "type": "Web App",
+      "stars": 0,
+      "forks": 0,
+      "estimatedLines": 6527,
+      "url": "https://github.com/parthks/cliproom",
+      "createdAt": "2026-09-07T12:13:21Z",
+      "updatedAt": "2026-09-07T12:43:45Z",
+      "description": "Local browser video editor for trimming, reframing, and adding subtitles",
+      "isPrivate": true
+    },
+    {
+      "name": "posibill",
+      "language": "TypeScript",
+      "languageColor": "#3b82f6",
+      "type": "Library / SDK",
+      "stars": 0,
+      "forks": 0,
+      "estimatedLines": 69090,
+      "url": "https://github.com/parthks/posibill",
+      "createdAt": "2026-07-27T20:00:26Z",
+      "updatedAt": "2026-09-08T05:51:10Z",
+      "description": "India-focused invoicing app with opt-in modules, including deep construction billing: running-account bills, retention, and TDS.",
+      "isPrivate": true
+    },
+    {
+      "name": "dj-school",
+      "language": "JavaScript",
+      "languageColor": "#f7df1e",
+      "type": "Data / ML",
+      "stars": 0,
+      "forks": 0,
+      "estimatedLines": 18157,
+      "url": "https://github.com/parthks/dj-school",
+      "createdAt": "2026-07-07T11:30:02Z",
+      "updatedAt": "2026-09-11T03:04:21Z",
+      "description": "Browser-based DJ school — 38-lesson course, real practice decks, in-browser AI stem separation, and guided drills with live feedback.",
+      "isPrivate": true
+    },
+    {
+      "name": "conductor-playground",
+      "language": "Unknown",
+      "languageColor": "#8b8b8b",
+      "type": "Scripts & Experiments",
+      "stars": 0,
+      "forks": 0,
+      "estimatedLines": 0,
+      "url": "https://github.com/parthks/conductor-playground",
+      "createdAt": "2026-07-02T10:22:51Z",
+      "updatedAt": "2026-07-02T10:22:52Z",
+      "description": "Scratch repo for Conductor experiments.",
+      "isPrivate": true
+    },
+    {
+      "name": "antigravity",
+      "language": "JavaScript",
+      "languageColor": "#f7df1e",
+      "type": "Data / ML",
+      "stars": 0,
+      "forks": 0,
+      "estimatedLines": 2001,
+      "url": "https://github.com/parthks/antigravity",
+      "createdAt": "2026-06-25T16:12:21Z",
+      "updatedAt": "2026-06-26T05:05:06Z",
+      "description": "Antigravity platform build proposal — interactive site, feature deep-dives, cost model & commercials",
+      "isPrivate": true
+    },
+    {
+      "name": "whatsapp-recruiter",
+      "language": "TypeScript",
+      "languageColor": "#3b82f6",
+      "type": "API / Backend",
+      "stars": 0,
+      "forks": 0,
+      "estimatedLines": 9058,
+      "url": "https://github.com/parthks/whatsapp-recruiter",
+      "createdAt": "2026-06-21T10:57:11Z",
+      "updatedAt": "2026-09-15T15:25:18Z",
+      "description": "Recruiting inbox on the WhatsApp Business Cloud API — contacts, cohort events, approved templates, and queue-paced broadcasts.",
+      "isPrivate": true
+    },
+    {
+      "name": "impromptoo",
+      "language": "TypeScript",
+      "languageColor": "#3b82f6",
+      "type": "Mobile App",
+      "stars": 0,
+      "forks": 0,
+      "estimatedLines": 19643,
+      "url": "https://github.com/parthks/impromptoo",
+      "createdAt": "2026-06-17T19:29:53Z",
+      "updatedAt": "2026-07-08T09:42:06Z",
+      "description": "Social app for spontaneous meetups — a Next.js web app and an Expo mobile app sharing one Supabase backend.",
+      "isPrivate": true
+    },
+    {
+      "name": "bandrahomes-parser",
+      "language": "Python",
+      "languageColor": "#38bdf8",
+      "type": "Scripts & Experiments",
+      "stars": 1,
+      "forks": 0,
+      "estimatedLines": 9959,
+      "url": "https://github.com/parthks/bandrahomes-parser",
+      "createdAt": "2026-04-21T16:16:30Z",
+      "updatedAt": "2026-05-18T07:51:52Z",
+      "description": "Turns WhatsApp real-estate chats into structured property listings and answers questions about them with RAG over pgvector.",
+      "isPrivate": true
+    },
+    {
+      "name": "my_personal_notes",
+      "language": "TypeScript",
+      "languageColor": "#3b82f6",
+      "type": "Scripts & Experiments",
+      "stars": 0,
+      "forks": 0,
+      "estimatedLines": 116119,
+      "url": "https://github.com/parthks/my_personal_notes",
+      "createdAt": "2026-04-13T03:33:58Z",
+      "updatedAt": "2026-09-15T04:57:24Z",
+      "description": "Personal Obsidian notes synced from phone and mac",
+      "isPrivate": true
+    },
+    {
+      "name": "stock-kings",
+      "language": "Python",
+      "languageColor": "#38bdf8",
+      "type": "Scripts & Experiments",
+      "stars": 0,
+      "forks": 0,
+      "estimatedLines": 13734,
+      "url": "https://github.com/parthks/stock-kings",
+      "createdAt": "2026-04-06T18:20:05Z",
+      "updatedAt": "2026-04-19T10:33:19Z",
+      "description": "Daily-regenerated market intelligence for Indian equities — surfaces only what changed in the Nifty 500 on a fear/greed regime axis.",
+      "isPrivate": true
+    },
+    {
+      "name": "mes-project",
+      "language": "TypeScript",
+      "languageColor": "#3b82f6",
+      "type": "Library / SDK",
+      "stars": 0,
+      "forks": 0,
+      "estimatedLines": 65147,
+      "url": "https://github.com/parthks/mes-project",
+      "createdAt": "2026-03-23T16:30:30Z",
+      "updatedAt": "2026-09-03T11:09:26Z",
+      "description": "Configurable manufacturing execution system (MES) — a universal production core with optional per-factory modules, multi-tenant.",
+      "isPrivate": true
+    },
+    {
+      "name": "developer-dna",
+      "language": "JavaScript",
+      "languageColor": "#f7df1e",
+      "type": "Web App",
+      "stars": 0,
+      "forks": 0,
+      "estimatedLines": 1466,
+      "url": "https://github.com/parthks/developer-dna",
+      "createdAt": "2026-03-18T18:08:23Z",
+      "updatedAt": "2026-03-18T18:11:11Z",
+      "description": "Data-driven developer portfolio — auto-generated from GitHub repos",
+      "isPrivate": false
+    },
     {
       "name": "Truvy",
       "language": "TypeScript",
@@ -429,10 +618,10 @@
       "type": "Web App",
       "stars": 0,
       "forks": 0,
-      "estimatedLines": 9152,
+      "estimatedLines": 15275,
       "url": "https://github.com/parthks/Truvy",
       "createdAt": "2026-03-08T14:44:33Z",
-      "updatedAt": "2026-03-17T14:31:12Z",
+      "updatedAt": "2026-04-06T04:40:11Z",
       "description": "A custom desktop app built for CA Bimal of Chhotalal H Shah & Co. in Mumbai",
       "isPrivate": true
     },
@@ -443,10 +632,10 @@
       "type": "Web App",
       "stars": 0,
       "forks": 0,
-      "estimatedLines": 15745,
+      "estimatedLines": 307537,
       "url": "https://github.com/parthks/wedemat-kings",
       "createdAt": "2026-03-02T17:17:06Z",
-      "updatedAt": "2026-03-12T16:58:07Z",
+      "updatedAt": "2026-09-10T15:47:22Z",
       "description": "The V2 aka the final rewrite of wedemat. AI kingly power. ",
       "isPrivate": true
     },
@@ -457,10 +646,10 @@
       "type": "Web App",
       "stars": 0,
       "forks": 0,
-      "estimatedLines": 16341,
+      "estimatedLines": 23976,
       "url": "https://github.com/parthks/YS-OPS",
       "createdAt": "2026-02-23T11:28:48Z",
-      "updatedAt": "2026-03-17T14:23:10Z",
+      "updatedAt": "2026-07-07T06:12:13Z",
       "description": "Operations Workflow Dashboard for YelloSKYE",
       "isPrivate": true
     },
@@ -471,10 +660,10 @@
       "type": "Web App",
       "stars": 0,
       "forks": 0,
-      "estimatedLines": 25334,
+      "estimatedLines": 34089,
       "url": "https://github.com/parthks/orderflow-360",
       "createdAt": "2026-01-27T11:55:22Z",
-      "updatedAt": "2026-02-26T14:26:10Z",
+      "updatedAt": "2026-08-14T12:57:58Z",
       "description": "Business operations management app for purchase orders, invoices, dispatches, and daily summaries.",
       "isPrivate": true
     },
@@ -482,7 +671,7 @@
       "name": "ArrowsAndAstras",
       "language": "TypeScript",
       "languageColor": "#3b82f6",
-      "type": "Web App",
+      "type": "Game",
       "stars": 0,
       "forks": 0,
       "estimatedLines": 380,
@@ -499,10 +688,10 @@
       "type": "Scraper / Automation",
       "stars": 0,
       "forks": 0,
-      "estimatedLines": 31233,
+      "estimatedLines": 36279,
       "url": "https://github.com/parthks/caxus",
       "createdAt": "2026-01-12T16:31:45Z",
-      "updatedAt": "2026-03-18T12:13:02Z",
+      "updatedAt": "2026-08-22T10:27:59Z",
       "description": "Compliance Automation Xcellence on Unified Suite",
       "isPrivate": true
     },
@@ -513,10 +702,10 @@
       "type": "Web App",
       "stars": 0,
       "forks": 0,
-      "estimatedLines": 12816,
+      "estimatedLines": 22808,
       "url": "https://github.com/parthks/shadibaba",
       "createdAt": "2025-12-27T04:22:15Z",
-      "updatedAt": "2025-12-27T05:52:20Z",
+      "updatedAt": "2026-08-08T11:50:01Z",
       "description": "Matrimonial profile management platform that extracts candidate data from PDFs using AI.",
       "isPrivate": true
     },
@@ -524,7 +713,7 @@
       "name": "ys-ai-test",
       "language": "TypeScript",
       "languageColor": "#3b82f6",
-      "type": "Web App",
+      "type": "Data / ML",
       "stars": 0,
       "forks": 0,
       "estimatedLines": 13618,
@@ -597,10 +786,10 @@
       "type": "Scripts & Experiments",
       "stars": 0,
       "forks": 0,
-      "estimatedLines": 39778,
+      "estimatedLines": 42126,
       "url": "https://github.com/parthks/theonlyindianstore",
       "createdAt": "2025-11-01T09:04:04Z",
-      "updatedAt": "2026-02-01T13:58:05Z",
+      "updatedAt": "2026-05-16T11:14:02Z",
       "description": "Hyperlocal e-commerce platform for Indian groceries and essentials.",
       "isPrivate": true
     },
@@ -692,7 +881,7 @@
       "name": "dumverse",
       "language": "TypeScript",
       "languageColor": "#3b82f6",
-      "type": "Game",
+      "type": "Blockchain / Web3",
       "stars": 2,
       "forks": 3,
       "estimatedLines": 14026,
@@ -783,7 +972,7 @@
       "url": "https://github.com/parthks/SA-sage",
       "createdAt": "2023-09-22T11:51:48Z",
       "updatedAt": "2023-10-27T04:05:32Z",
-      "description": "Playing an onchain game through sending on-chain commands!!!",
+      "description": "Bot that plays the Star Atlas SAGE on-chain game by issuing Solana transactions.",
       "isPrivate": true
     },
     {
@@ -846,14 +1035,14 @@
       "name": "ichtech",
       "language": "Jupyter Notebook",
       "languageColor": "#8b8b8b",
-      "type": "Data / ML",
+      "type": "Blockchain / Web3",
       "stars": 0,
       "forks": 1,
       "estimatedLines": 10782,
       "url": "https://github.com/parthks/ichtech",
       "createdAt": "2022-07-02T13:56:36Z",
       "updatedAt": "2024-07-19T10:47:24Z",
-      "description": "all about the gram",
+      "description": "Instagram data collection pipeline that loads scraped profile data into Firebase and a Meilisearch index.",
       "isPrivate": true
     },
     {
@@ -863,10 +1052,10 @@
       "type": "Web App",
       "stars": 0,
       "forks": 0,
-      "estimatedLines": 990,
+      "estimatedLines": 988,
       "url": "https://github.com/parthks/wedemat-next",
       "createdAt": "2022-01-26T06:08:38Z",
-      "updatedAt": "2025-10-27T11:44:47Z",
+      "updatedAt": "2026-06-15T13:00:51Z",
       "description": "Data search and exploration dashboard powered by Meilisearch with faceted filtering and pagination.",
       "isPrivate": true
     },
@@ -923,21 +1112,21 @@
       "url": "https://github.com/parthks/the-only-indian-store",
       "createdAt": "2022-01-04T14:02:04Z",
       "updatedAt": "2022-01-04T14:02:30Z",
-      "description": "The Only Indian Store ",
+      "description": "Next.js storefront for an Indian grocery e-commerce service, built with Material-UI and Ant Design.",
       "isPrivate": true
     },
     {
       "name": "bustabit",
       "language": "PureBasic",
       "languageColor": "#8b8b8b",
-      "type": "Scripts & Experiments",
+      "type": "Game",
       "stars": 0,
-      "forks": 1,
+      "forks": 0,
       "estimatedLines": 924,
       "url": "https://github.com/parthks/bustabit",
       "createdAt": "2022-01-04T13:39:25Z",
       "updatedAt": "2022-01-04T13:43:43Z",
-      "description": "Tinkering to hack bustabit",
+      "description": "Statistical analysis of the bustabit gambling game — sequence generation and provably-fair seed exploration.",
       "isPrivate": false
     },
     {
@@ -993,7 +1182,7 @@
       "url": "https://github.com/parthks/wallet-adapters",
       "createdAt": "2021-08-24T18:24:03Z",
       "updatedAt": "2021-08-31T17:08:40Z",
-      "description": "testing out wallet adapters in solana ",
+      "description": "Experiment wiring up Solana wallet adapters in a React app.",
       "isPrivate": false
     },
     {
@@ -1007,7 +1196,7 @@
       "url": "https://github.com/parthks/torus",
       "createdAt": "2021-08-24T18:17:55Z",
       "updatedAt": "2021-08-31T18:47:20Z",
-      "description": "testing out torus integration with solana",
+      "description": "Experiment integrating Torus wallet authentication with Solana.",
       "isPrivate": false
     },
     {
@@ -1028,7 +1217,7 @@
       "name": "admin",
       "language": "Unknown",
       "languageColor": "#8b8b8b",
-      "type": "Scripts & Experiments",
+      "type": "Web App",
       "stars": 0,
       "forks": 0,
       "estimatedLines": 0,
@@ -1042,7 +1231,7 @@
       "name": "virtuoso",
       "language": "HTML",
       "languageColor": "#e34c26",
-      "type": "Web App",
+      "type": "API / Backend",
       "stars": 0,
       "forks": 0,
       "estimatedLines": 267,
@@ -1056,7 +1245,7 @@
       "name": "tindearyo",
       "language": "Python",
       "languageColor": "#38bdf8",
-      "type": "Scripts & Experiments",
+      "type": "Mobile App",
       "stars": 0,
       "forks": 0,
       "estimatedLines": 125,
@@ -1126,13 +1315,13 @@
       "name": "wedemat-react",
       "language": "JavaScript",
       "languageColor": "#f7df1e",
-      "type": "Scripts & Experiments",
+      "type": "Mobile App",
       "stars": 0,
       "forks": 0,
-      "estimatedLines": 19970,
+      "estimatedLines": 21910,
       "url": "https://github.com/parthks/wedemat-react",
       "createdAt": "2020-06-21T13:46:35Z",
-      "updatedAt": "2026-03-11T03:57:59Z",
+      "updatedAt": "2026-04-02T16:20:08Z",
       "description": "Business management system for tracking Indian stock market shareholder portfolios and IEPF workflows.",
       "isPrivate": true
     },
@@ -1210,7 +1399,7 @@
       "name": "MealShare",
       "language": "JavaScript",
       "languageColor": "#f7df1e",
-      "type": "Web App",
+      "type": "Mobile App",
       "stars": 0,
       "forks": 0,
       "estimatedLines": 1578,
@@ -1231,21 +1420,21 @@
       "url": "https://github.com/parthks/Trading-Bot",
       "createdAt": "2018-01-23T19:09:58Z",
       "updatedAt": "2018-01-23T19:09:59Z",
-      "description": "Cryptocurrency Trading Bot - $$$",
+      "description": "Placeholder repo for a cryptocurrency trading bot.",
       "isPrivate": true
     },
     {
       "name": "undergroundz",
       "language": "LOLCODE",
       "languageColor": "#8b8b8b",
-      "type": "Scripts & Experiments",
+      "type": "Scraper / Automation",
       "stars": 0,
       "forks": 0,
       "estimatedLines": 1320,
       "url": "https://github.com/parthks/undergroundz",
       "createdAt": "2017-10-25T00:38:15Z",
       "updatedAt": "2017-11-19T21:19:34Z",
-      "description": "Movies!",
+      "description": "Python pipeline that scrapes streaming-site links and bulk-downloads them to network storage.",
       "isPrivate": false
     },
     {
@@ -1266,14 +1455,14 @@
       "name": "fun",
       "language": "JavaScript",
       "languageColor": "#f7df1e",
-      "type": "Scraper / Automation",
+      "type": "Blockchain / Web3",
       "stars": 0,
       "forks": 0,
       "estimatedLines": 8735,
       "url": "https://github.com/parthks/fun",
       "createdAt": "2017-07-12T19:17:55Z",
       "updatedAt": "2017-08-13T01:29:14Z",
-      "description": "Random, Stupid fun stuff",
+      "description": "Grab bag of throwaway automation — site scrapers, browser bots, a Chrome extension, and blockchain data exports.",
       "isPrivate": true
     },
     {
@@ -1301,7 +1490,7 @@
       "url": "https://github.com/parthks/download-all",
       "createdAt": "2017-05-17T17:53:12Z",
       "updatedAt": "2017-07-04T14:23:06Z",
-      "description": "Download from solar movies to drive",
+      "description": "Python scripts that bulk-download video links scraped from a streaming site.",
       "isPrivate": false
     },
     {
@@ -1322,7 +1511,7 @@
       "name": "EduSim-1.0",
       "language": "JavaScript",
       "languageColor": "#f7df1e",
-      "type": "Scripts & Experiments",
+      "type": "Game",
       "stars": 0,
       "forks": 0,
       "estimatedLines": 65548,
@@ -1378,7 +1567,7 @@
       "name": "PokeGoChat",
       "language": "Swift",
       "languageColor": "#F05138",
-      "type": "Mobile App",
+      "type": "Game",
       "stars": 0,
       "forks": 0,
       "estimatedLines": 9968,

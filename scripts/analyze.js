@@ -12,7 +12,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from "
 import { join, resolve } from "path";
 
 const GITHUB_USERNAME = "parthks";
-const REPOS_DIR = resolve("/Users/parth/Documents/github-repos");
+const REPOS_DIR = resolve(process.env.REPOS_DIR || "/Users/parth/Documents/github-repos");
 const OUTPUT_PATH = resolve("src/data/developer-dna.json");
 
 // Manual category overrides

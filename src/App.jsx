@@ -127,7 +127,8 @@ function TreemapChart() {
     <div className="relative w-full h-[360px] sm:h-[480px]">
       {rects.map((rect, i) => {
         const isLarge = rect.percentage >= 10;
-        const isMedium = rect.percentage >= 10;
+        // 10–19% tiles show the icon but are too short for the hero-sized number.
+        const isMedium = isLarge && rect.percentage < 20;
         return (
           <motion.div
             key={rect.name}
@@ -147,7 +148,7 @@ function TreemapChart() {
           >
             {isLarge && (
               <div
-                className="hidden sm:flex w-11 h-11 rounded-xl items-center justify-center mb-3"
+                className={`hidden sm:flex w-11 h-11 rounded-xl items-center justify-center ${isMedium ? "mb-1" : "mb-3"}`}
                 style={{ backgroundColor: `${rect.color}20` }}
               >
                 <CategoryIcon name={rect.icon} style={{ color: rect.color }} />
@@ -157,7 +158,7 @@ function TreemapChart() {
               {rect.name}
             </span>
             <span
-              className={`font-mono font-bold tracking-tight ${isLarge ? "text-xl sm:text-4xl mt-0.5 sm:mt-1" : "text-sm sm:text-base"}`}
+              className={`font-mono font-bold tracking-tight ${isMedium ? "text-base sm:text-xl" : isLarge ? "text-xl sm:text-4xl mt-0.5 sm:mt-1" : "text-sm sm:text-base"}`}
               style={{ color: rect.color }}
             >
               {rect.percentage}%
